@@ -24,12 +24,12 @@
 #
 ## Table of Contents
 
-- [Prequisites]()
-- [Creating a working directory]()
-- [Creating SSH Key Pair]()
-- [Initialize the Terraform working directory]()
-- [Terraform Command Lines Used]()
-   - [Plan, Deploy and Destroy Infrastructure]()
+- [Prequisites](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#prerequisites)
+- [Creating a working directory](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#creating-a-working-directory)
+- [Creating SSH Key Pair](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#creating-ssh-key-pair)
+- [Initialize the Terraform working directory](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#initialize-the-terraform-working-directory)
+- [Terraform Command Lines Used](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#terraform-command-lines-used)
+   - [Plan, Deploy and Destroy Infrastructure](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#plan-deploy-and-destroy-infrastructure)
 ---------------------------------------------------------------
 
 ## Prerequisites.
