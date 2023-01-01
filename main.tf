@@ -203,6 +203,8 @@ resource "aws_security_group" "frontend-traffic" {
     ipv6_cidr_blocks = ["::/0"]
   }
  
+ # Adding Life Cycle Policy.
+ 
   lifecycle {
     create_before_destroy = true
   }
@@ -256,7 +258,7 @@ resource "aws_security_group" "backend-traffic" {
 }
  
  
-// Creating an SSH Key Pair in the name "mykey"
+// Registering the public key of an existing SSH Key Pair with AWS to allow logging-in to EC2 instances.
  
 resource "aws_key_pair" "ssh_key" {
  
@@ -302,6 +304,9 @@ resource "aws_instance" "frontend" {
  
     "Name" = "${var.project}-${var.environment}-frontend"
   }
+ 
+ # Defining the dependancy with the Backend Server.
+ 
   depends_on = [aws_instance.backend]
 }
  
@@ -320,6 +325,9 @@ resource "aws_instance" "backend" {
  
     "Name" = "${var.project}-${var.environment}-backend"
   }
+ 
+ # Defining the dependancy with the NAT Gateway.
+ 
   depends_on = [aws_nat_gateway.nat]
 }
  
