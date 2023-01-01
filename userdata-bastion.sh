@@ -9,5 +9,5 @@ service sshd restart
 #
 # Setting an FQDN hostname for the Bastion Server.
 #
-hostnamectl set-hostname backend.myprojectdomain.com
+hostnamectl set-hostname bastion.myprojectdomain.com
 #
