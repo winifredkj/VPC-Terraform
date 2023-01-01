@@ -1,8 +1,13 @@
-# VPC-Terraform
-#
+# AWS VPC - Terraform
+
+In this repo, I am trying to create and set up a VPC and host a WordPress website using Terraform.
+
+Terraform is an open-source software tool that allows cloud architects to define components and their dependencies using relatively simple declarative configuration files. Terraform allows for the provisioning, modification, and decommissioning of all cloud resources using a simple CLI workflow (write, plan, apply). It has an open-source version that is free to install and use. At a larger, scale subscription versions – Terraform Cloud and Terraform Enterprise – can be used to manage deployments for different projects and teams, and integrate with other platforms. Let’s get to the code!
+
 ## Creating a custom VPC using Terraform:
-#
+
 ---------------------------------------------------------------
+
 ### _Resources we will be using in this setup:_
 - Public subnets - 2
 - Private subnet - 1
@@ -21,7 +26,7 @@
 - Private Hosted Zone - 1
 
 ---------------------------------------------------------------
-#
+
 ## Table of Contents
 
 - [Prequisites](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#prerequisites)
@@ -37,6 +42,7 @@
 - Terraform must be installed and configured on your local machine. You can refer to [Terraform Official Website.](https://developer.hashicorp.com/terraform/downloads)
 - An SSH Key Pair must be created under the infra directory (In this example, the SSH Key name should be "mykey").
 ----------------------------------------------------------
+
 ## Creating a working directory:
 
     # mkdir myprojectdir/
@@ -45,7 +51,7 @@
 ----------------------------------------------------------------
 
 ## Creating SSH Key Pair:
-#
+
     $ ssh-keygen
     Generating public/private rsa key pair.
     Enter file in which to save the key (/home/ec2-user/.ssh/id_rsa): mykey
@@ -68,31 +74,31 @@
     |            oo   |
     +----[SHA256]-----+
     $
-#
+
 --------------------------------------------------------------------
 
 ## Initialize the Terraform working directory:
-#
+
 
     # terraform init 
     // initialize directory, pull down providers
 -----------------------------------------------------------------------
-#
+
 ## Terraform Command Lines Used:
-#
-#### Plan, Deploy and Destroy Infrastructure:
-#
+
+### Plan, Deploy and Destroy Infrastructure:
+###
     # terraform plan 
     // Output the deployment plan.
-#
+###
     # terraform apply
     // Apply the changes to the infrastructure.
-#
+###
     # terraform apply --auto-approve 
     // Apply changes without being prompted to enter “yes”.
-#
+###
     # terraform destroy
     // Destroy/cleanup the deployment
-#
+###
     # terraform destroy --auto-approve 
     // Destroy/cleanup deployment without being prompted for “yes”.
