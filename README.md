@@ -59,6 +59,7 @@ Let’s get to the code!
 
 - Terraform (preferably Terraform v1.3.6) must be installed and configured on your local machine. You can refer to [Terraform Official Website.](https://developer.hashicorp.com/terraform/downloads)
 - An SSH Key Pair must be created under the infra directory (In this example, the SSH Key name should be "mykey").
+- IAM user with Programmatic access to AWS with AmazonEc2FullAccess and AmazonRoute53FullAccess
 - A Public Hosted Zone with a valid domain in AWS.
 ----------------------------------------------------------
 
