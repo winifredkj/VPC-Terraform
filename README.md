@@ -47,7 +47,7 @@ Let’s get to the code!
 
 ## Table of Contents
 
-- [Prequisites](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#prerequisites)
+- [Prerequisites](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#prerequisites)
 - [Creating a working directory](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#creating-a-working-directory)
 - [Creating SSH Key Pair](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#creating-ssh-key-pair)
 - [Initialize the Terraform working directory](https://github.com/winifredkj/VPC-Terraform/blob/main/README.md#initialize-the-terraform-working-directory)
